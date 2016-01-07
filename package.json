@@ -1,0 +1,44 @@
+{
+  "name": "yaakov-qa-client",
+  "version": "0.0.0",
+  "description": "React/Redux/MQTT chat application",
+  "readme": "no information yet",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify --extension=js -o WWW/bundle.js index.js",
+    "start": "browserify --extension=js -o WWW/bundle.js index.js; node start-mosca.js",
+    "start0": "browserify --extension=js -o WWW/bundle.js index.js; bash start-mosca.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Yaakov-Belch/reactive-app.git"
+  },
+  "keywords": [
+    "redux",
+    "react",
+    "mqtt"
+  ],
+  "author": "Yaakov Belch",
+  "license": "GPL-3.0",
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "dependencies": {
+    "marked": "^0.3.5",
+    "mosca": "^0.32.1",
+    "mqtt": "^1.6.1",
+    "react": "^0.14.0",
+    "react-autosize-textarea": "^0.2.5",
+    "react-dom": "^0.14.0",
+    "react-redux": "^3.1.0",
+    "react-textarea-autosize": "^3.2.0",
+    "redux": "^3.0.0",
+    "shortid": "^2.2.4"
+  },
+  "devDependencies": {
+    "browserify": "~10.2.4",
+    "babelify": "~6.1.2"
+  }
+}
