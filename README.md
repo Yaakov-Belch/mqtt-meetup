@@ -19,6 +19,7 @@ This is a simplistic question/answer/chat application.
 
 Call to action:
 * Look at the code, play with it.
+* Learn about [MQTT](https://dzone.com/refcardz/getting-started-with-mqtt), [MQTT.js](https://github.com/mqttjs/MQTT.js) and [mosca](https://github.com/mcollina/mosca).
 * If you have questions or comments --- discuss in the 
   [Issues section](https://github.com/Yaakov-Belch/mqtt-meetup/issues) of this repository.  
   It's not only for bugs --- but for an open discussion on reactive apps with MQTT.
