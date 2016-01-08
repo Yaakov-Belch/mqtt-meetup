@@ -13,7 +13,8 @@ const opts={
       type: 'http',
       host: process.env.IP||'0.0.0.0',
       port: (process.env.PORT||8080)*1,
-      static: 'WWW'
+      static: 'WWW',
+      bundle: true
     }, {
       type: 'mqtt',
       host: process.env.IP,
