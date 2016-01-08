@@ -12,5 +12,6 @@ node_modules/.bin/mosca -v  \
 # mqtt_sub -t hello            -l ws -h mqtt-meetup-yaakov-belch.c9users.io
 # mqtt_pub -t hello -m message -l ws -h mqtt-meetup-yaakov-belch.c9users.io
 
-# https://mqtt-meetup-yaakov-belch.c9users.io/mqtt-client.html
-# https://mqtt-meetup-yaakov-belch.c9users.io/App/
+# http://mqtt-meetup-yaakov-belch.c9users.io/mqtt-client.html
+# http://mqtt-meetup-yaakov-belch.c9users.io/mqtt-client.html
+# http://mqtt-meetup-yaakov-belch.c9users.io/

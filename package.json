@@ -6,8 +6,8 @@
   "main": "index.js",
   "scripts": {
     "build": "browserify --extension=js -o WWW/bundle.js index.js",
-    "start": "browserify --extension=js -o WWW/bundle.js index.js; node start-mosca.js",
-    "start0": "browserify --extension=js -o WWW/bundle.js index.js; bash start-mosca.sh"
+    "start1": "browserify --extension=js -o WWW/bundle.js index.js; node start-mosca.js",
+    "start": "browserify --extension=js -o WWW/bundle.js index.js; bash start-mosca.sh"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Simple MQTT chat client</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="/mqtt.js"></script>
+		<script type="text/javascript">
+	
+      $(function(){
+        console.log("loaded");
+        
+        var client  = mqtt.connect('ws://');
+        
+        client.on('connect', function(){
+          console.log('connected');
+          client.subscribe('hello');
+        });
+        
+        client.on('message',function(topic,message,pkg) {
+          console.log(message.toString());
+          console.log(pkg);
+          $('#output').text(message.toString());
+        });
+        
+        $('#input').change(function(e){
+          client.publish('hello',e.target.value,{
+              qos:1,retain:true
+          },function(){});
+          $('#input').val('');
+        });
+        
+      });
+  	</script>
+	</head>
+	<body>
+    <h4>Simple MQTT chat client</h4>
+    
+    <div id="output">...</div>
+    <input type="text" id="input">
+    
+	</body>
+</html>
+
